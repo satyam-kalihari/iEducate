@@ -1,5 +1,24 @@
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../font/RobotoCondensed-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'RobotoCondensed-bold';
+    src: url('../font/RobotoCondensed-Bold.ttf') format('woff2'),
+         url('../font/RobotoCondensed-BoldItalic.ttf') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
 *{
     margin: 0;
+    font-family: 'RobotoCondensed-Regular';
 }
 
 header{
@@ -11,8 +30,8 @@ header{
 }
 
 .logo img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     border: 1px solid hsl(0, 9%, 73%);
     border-radius: 50%;
 }
@@ -52,4 +71,28 @@ header{
 
 .search{
     border-radius: 5px;
+}
+
+.box-main{
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.fristHalf{
+    padding: 10px;
+    margin: 5px;
+}
+
+.text-big{
+    font-family: 'RobotoCondensed-bold';
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+.text-small{
+    text-align: left;
+    width: 70%;
 }
