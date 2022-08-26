@@ -21,12 +21,19 @@
     font-family: 'RobotoCondensed-Regular';
 }
 
+.background{    
+    background: hsl(0, 0%, 70%) url(../img/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
 header{
     display: flex;
     justify-content: space-around;
-    position: static;
-    /* background-color: hsl(160, 100%, 75%); */
-    background: url(../img/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    position: sticky;
+    top: 0px;
+    background-color: hsla(0, 0%, 90%, 0.169);
+    background-blend-mode: lighten;
 }
 
 .logo img{
@@ -73,26 +80,63 @@ header{
     border-radius: 5px;
 }
 
+.fristSection{
+    height: 70%;
+}
+
 .box-main{
+    padding-top: 20px;
+    width: 65%;
+    /* height: 80%; */
+    margin: auto;
+    color: hsl(0, 70%, 90%);
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    margin: auto;
 }
 
 .fristHalf{
     padding: 10px;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .text-big{
     font-family: 'RobotoCondensed-bold';
-    font-size: 25px;
+    font-size: 40px;
     margin: 5px;
-    text-align: center;
 }
 
 .text-small{
-    text-align: left;
     width: 70%;
+    font-size: 18px;
+}
+
+.secondHalf{
+    width: 40%;
+}
+
+.secondHalf img{
+    width: 280px;
+    border: 3px solid snow;
+    margin: auto;
+}
+
+.btn{
+    padding: 6px 10px;
+    margin: 10px 4px;
+    font-size: 17px;
+    color: aliceblue;
+    border: 2px solid white;
+    background: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-sm{
+    padding: 5px 15px;
+    font-size: 10px;
+    vertical-align: middle;
 }
