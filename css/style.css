@@ -13,8 +13,9 @@
          url('../font/RobotoCondensed-BoldItalic.ttf') format('woff');
     font-weight: bold;
     font-style: italic;
-
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -52,7 +53,9 @@ header{
 .nav-list li{
     padding: 10px;
     list-style: none;
-    background-color: hsla(0, 0%, 70%, 0.295);
+    /* background-color: hsla(0, 0%, 70%, 0.295); */
+    font-size: 18px;
+    font-weight: bold;
     margin: 5px;
 }
 
@@ -87,7 +90,6 @@ header{
 .box-main{
     padding-top: 20px;
     width: 65%;
-    /* height: 80%; */
     margin: auto;
     color: hsl(0, 70%, 90%);
     display: flex;
@@ -119,7 +121,9 @@ header{
 }
 
 .secondHalf img{
-    width: 280px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     border: 3px solid snow;
     margin: auto;
 }
@@ -139,4 +143,43 @@ header{
     padding: 5px 15px;
     font-size: 10px;
     vertical-align: middle;
+}
+
+.content-section{
+    max-width: 80%;
+    height: 400px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sectionTag{
+    font-size: 34px;
+    margin: 7px;
+    padding: 5px 0px;
+}
+
+.para{
+    /* width: fit-content; */
+    /* width: 700px; */
+    padding: 0px;
+}
+
+.thumbnail{
+    /* border: 2px solid slategray; */
+}
+
+.thumbnail-image{
+    padding: 0px;
+}
+
+.right-section{
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.right-section .thumbnail{
+    padding: 50px;
 }
