@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    position: static;
+    /* background-color: hsl(160, 100%, 75%); */
+    background: url(../img/wallpaperflare.com_wallpaper\ \(4\).jpg);
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid hsl(0, 9%, 73%);
+    border-radius: 50%;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list li{
+    padding: 10px;
+    list-style: none;
+    background-color: hsla(0, 0%, 70%, 0.295);
+    margin: 5px;
+}
+
+.nav-list li:hover{
+    transform: scale(1.5);
+    transition: 1000ms;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list-a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.search-contener{
+    display: inline;
+    text-align: right;
+    align-self: center;
+}
+
+.search{
+    border-radius: 5px;
+}
