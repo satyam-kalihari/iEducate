@@ -62,8 +62,8 @@ main{
     border-radius: 2px;
     background-color: hsla(0, 0%, 50%, 0.445);
     position: absolute;
-    top: 23%;
-    right: 3%;
+    top: 11px;
+    right: 4px;
 }
 
 .line{
@@ -113,10 +113,6 @@ main{
 .nav-list li a{
     text-decoration: none;
     color: black;
-}
-
-.nav-list-a:hover{
-    color: hsl(0, 0%, 100%);
 }
 
 .search-contener{
@@ -224,7 +220,6 @@ main{
 }
 
 footer{
-    margin: auto;
     width: 100%;
     color: whitesmoke;
     font-family: 'ubuntumedium';
@@ -263,7 +258,9 @@ footer{
 
 @media only screen and (max-width: 730px){
     .header{
+        height: 305px;
         flex-direction: column;
+        transition: all 0.6s ease-out;
     }
     .nav-list{
         flex-direction: column;
@@ -271,7 +268,22 @@ footer{
     .burger{
         display: block;
     }
+    .h-nav-bar{
+        height: 54px;
+    }
     .nav-resp{
+        display: none;
+    }
+    .box-main{
+        max-width: 95%;
+        flex-direction: column-reverse;
+    }
+    footer{
+        font-size: small;
+        margin-top: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .coloum-5{
         display: none;
     }
 }
