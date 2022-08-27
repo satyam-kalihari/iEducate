@@ -260,6 +260,9 @@ footer{
         flex-direction: column;
         transition: all 0.6s ease-out;
     }
+    .fristSection{
+        height: 710px;
+    }
     .nav-list{
         flex-direction: column;
     }
@@ -282,9 +285,6 @@ footer{
     .btn{
         padding: 5px 15px;
         font-size: 10px;
-        /* vertical-align: middle;
-        color: black;
-        border-color: black; */
     }
     .content-section{
         flex-direction: column-reverse;
