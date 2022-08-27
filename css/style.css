@@ -35,7 +35,7 @@
 
 *{
     margin: 0;
-    font-family: 'RobotoCondensed-Regular';
+    /*  */
 }
 
 header{
@@ -43,13 +43,34 @@ header{
     top: 0px;
 }
 
+main{
+    font-family: 'RobotoCondensed-Regular';
+}
+
 .header{
     display: flex;
     justify-content: space-around;
     background-color: hsla(0, 0%, 90%, 0.886);
     background-blend-mode: lighten;
-    position: sticky;
-    top: 0px;
+}
+
+.burger{
+    display: none;
+    width: 40px;
+    height: 20px;
+    padding: 4px 0px;
+    border-radius: 2px;
+    background-color: hsla(0, 0%, 50%, 0.445);
+    position: absolute;
+    top: 23%;
+    right: 3%;
+}
+
+.line{
+    margin: 3px 4px;
+    height: 3px;
+    background-color: aliceblue;
+    border-radius: 2px;
 }
 
 .background{    
@@ -105,7 +126,12 @@ header{
 }
 
 .search{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 5px;
     border-radius: 5px;
+    border: 1px solid gray;
+    background: none;
 }
 
 .box-main{
@@ -164,11 +190,13 @@ header{
     padding: 5px 15px;
     font-size: 10px;
     vertical-align: middle;
+    color: black;
+    border-color: black;
 }
 
 .content-section{
     max-width: 85%;
-    height: 350px;
+    min-height: 350px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -206,6 +234,7 @@ footer{
     background: hsl(0, 0%, 50%) ;
     background-size: cover;
     background-blend-mode: lighten;
+    padding: 20px 10px;
 }
 
 .coloum p:first-child{
@@ -228,4 +257,21 @@ footer{
     margin: 3% 0%;
     border-radius: 50%;
     border: 2px solid snow;
+}
+
+
+
+@media only screen and (max-width: 730px){
+    .header{
+        flex-direction: column;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-resp{
+        display: none;
+    }
 }
